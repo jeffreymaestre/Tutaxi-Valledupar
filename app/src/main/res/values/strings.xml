@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UbiTaX Cliente</string>
+    <string name="phone_description">Ingrese su numero de celular para la verificacion</string>
+</resources>

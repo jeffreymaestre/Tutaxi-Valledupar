@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jeffrey.uberclon">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icono"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.RequestDriverByIdActivity"></activity>
+        <activity android:name=".activities.PhoneAuthActivity" />
+        <activity android:name=".activities.HistoryBookingDetailClientActivity" />
+        <activity
+            android:name=".activities.HistoryBookingClientActivity"
+            android:parentActivityName=".activities.MapClientActivity" />
+        <activity
+            android:name=".activities.UpdateProfileActivity"
+            android:parentActivityName=".activities.MapClientActivity" />
+        <activity android:name=".activities.CalificationDriverActivity" />
+        <activity android:name=".activities.MapClientBookingActivity" />
+
+        <service android:name=".services.MyFirebaseMessagingClient">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activities.RequestDriverActivity" />
+        <activity
+            android:name=".activities.DetailRequestActivity"
+            android:parentActivityName=".activities.MapClientActivity" />
+        <activity android:name=".activities.MapClientActivity" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+
+</manifest>
