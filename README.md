@@ -1,6 +1,6 @@
 # Tu taxi Valledupar - App para Usuarios
 
-¡Bienvenido al repositorio de la aplicación Tu taxi Valledupar para conductores!
+¡Bienvenido al repositorio de la aplicación Tu taxi Valledupar para usuarios!
 
 Esta aplicación fue desarrollada en el año 2020 y se encuentra disponible en la tienda de Google Play. Tu taxi Valledupar es una aplicación tipo Uber diseñada para usuarios de Valledupar y sus alrededores. Permite a los usuarios conectarse con conductores, enviar solicitudes de viaje y administrar sus viajes de manera eficiente.
 
